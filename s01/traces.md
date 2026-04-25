@@ -62,6 +62,7 @@ Message(
     usage=Usage(cache_creation=CacheCreation(ephemeral_1h_input_tokens=0, ephemeral_5m_input_tokens=0), cache_creation_input_tokens=0, cache_read_input_tokens=0, inference_geo='global', input_tokens=777, output_tokens=85, server_tool_use=None, service_tier='standard')
 )
 ```
+Note **stop_reason='end_turn'** here.
 ------------
 The file `hello.py` has been created and verified! Here's what was done:
 

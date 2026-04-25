@@ -76,7 +76,7 @@ def run_bash(command: str) -> str:
     except (FileNotFoundError, OSError) as e:
         return f"Error: {e}"
 
-
+import json
 # -- The core pattern: a while loop that calls tools until the model stops --
 def agent_loop(messages: list):
     while True:
@@ -87,6 +87,10 @@ def agent_loop(messages: list):
         # Append assistant turn
         messages.append({"role": "assistant", "content": response.content})
         # If the model didn't call a tool, we're done
+
+        print("------------")
+        print(response)
+        print("------------")
         if response.stop_reason != "tool_use":
             return
         # Execute each tool call, collect results

@@ -63,7 +63,7 @@ Message(
 )
 ```
 
-### Note **stop_reason='end_turn'** here.
+#### Note: **stop_reason='end_turn'** here.
 
 ------------
 The file `hello.py` has been created and verified! Here's what was done:
